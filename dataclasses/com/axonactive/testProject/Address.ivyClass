@@ -1,0 +1,6 @@
+Address #class
+com.axonactive.testProject #namespace
+street String #field
+street PERSISTENT #fieldModifier
+country String #field
+country PERSISTENT #fieldModifier

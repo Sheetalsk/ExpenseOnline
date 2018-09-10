@@ -1,0 +1,20 @@
+TestLoginProcessData #class
+com.axonactive.testProject #namespace
+firstName String #field
+firstName PERSISTENT #fieldModifier
+lastName String #field
+lastName PERSISTENT #fieldModifier
+testLoginProcess com.axonactive.testProject.TestLoginProcessData #field
+testLoginProcess PERSISTENT #fieldModifier
+deliveryAddress com.axonactive.testProject.Address #field
+deliveryAddress PERSISTENT #fieldModifier
+billingAddress com.axonactive.testProject.Address #field
+billingAddress PERSISTENT #fieldModifier
+birthday Date #field
+birthday PERSISTENT #fieldModifier
+Email String #field
+Email PERSISTENT #fieldModifier
+paymentKind String #field
+paymentKind PERSISTENT #fieldModifier
+creditCardNumber String #field
+creditCardNumber PERSISTENT #fieldModifier

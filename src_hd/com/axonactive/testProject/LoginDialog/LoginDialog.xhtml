@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:ic="http://ivyteam.ch/jsf/component"
+	xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<ui:composition template="/layouts/basic.xhtml">
+		<ui:define name="title">LoginDialog1</ui:define>
+		<ui:define name="content">
+			<h3>Welcome Account Holder</h3>
+
+			<h:form id="form">
+				<h:panelGrid columns="2">
+					<p:outputLabel value="First Name: " for="firstName"></p:outputLabel>
+					<p:inputText value="#{data.testLoginProcess.firstName}"
+						required="true" id="firstName" />
+					<p:outputLabel value="Last Name: " for="lastName"></p:outputLabel>
+					<p:inputText value="#{data.testLoginProcess.lastName}"
+						required="true" id="lastName" />
+					<p:outputLabel value="Birthday: "></p:outputLabel>
+					<p:inputText value="#{data.testLoginProcess.birthday}">
+						<f:converter converterId="birthdayConverter"></f:converter>
+					</p:inputText>
+
+					<p:outputLabel value="Email: " for="email"></p:outputLabel>
+					<p:inputText value="#{data.testLoginProcess.email}" id="email">
+						<f:validator validatorId="emailValidator"></f:validator>
+					</p:inputText>
+					<p:commandButton actionListener="#{logic.callLogin}"
+						value="Proceed" update="form" icon="ui-icon-check" />
+				</h:panelGrid>
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

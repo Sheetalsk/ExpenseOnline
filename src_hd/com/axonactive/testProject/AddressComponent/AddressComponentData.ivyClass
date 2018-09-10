@@ -1,0 +1,4 @@
+AddressComponentData #class
+com.axonactive.testProject.AddressComponent #namespace
+address com.axonactive.testProject.Address #field
+address PERSISTENT #fieldModifier

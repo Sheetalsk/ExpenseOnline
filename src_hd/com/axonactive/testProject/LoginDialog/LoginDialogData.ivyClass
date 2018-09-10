@@ -1,0 +1,4 @@
+LoginDialogData #class
+com.axonactive.testProject.LoginDialog #namespace
+testLoginProcess com.axonactive.testProject.TestLoginProcessData #field
+testLoginProcess PERSISTENT #fieldModifier
